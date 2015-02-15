@@ -1,0 +1,10 @@
+#topBar{
+    width:100%;
+    height:50px;
+    border:solid blue 1px;
+}
+#titleBar{
+    width:100%;
+    heigh:150px;
+    border:solid red 1px;
+}
