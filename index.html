@@ -181,7 +181,25 @@
 <p>Homework 4 Visualization - Below is link to our parallel Coordinates system that shows various domestic airline carriers with respect to Passengers, Seats, Distance, Air Time, Payload, Freight and Mail. Dragging over a column will narrow results and hovering over an item in the chart below the graph will highlight the line on the graph. <br><br><a href="http://jnahley.github.io/RJVisual.github.io/Hw4/index.html">Airline Parallel Coordinates</a></p>
        
           
-    <iframe src="http://jnahley.github.io/RJVisual.github.io/Hw4/index.html" width="600" height="400">iframe</iframe>
+   <style>
+#iFrame { width: 710px; height: 1420px; padding: 0; overflow: hidden; }
+#scaled-frame { width: 1000px; height: 2000px; border: 0px; }
+#scaled-frame {
+    zoom: 0.71;
+    -moz-transform: scale(0.71);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.71);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.71);
+    -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #scaled-frame  { zoom: 1;  }
+}
+</style>
+
+<div id="iFrame"><iframe id="scaled-frame" src="http://jnahley.github.io/RJVisual.github.io/Hw4/index.html"></iframe></div>
         </section>
 
         <aside id="sidebar">
