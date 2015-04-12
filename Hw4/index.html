@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Airline Parallel Coordinates</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="d3.parcoords.js"></script>
+    <script src="d3.underscore.math.js"></script>
+    <script src="d3.divgrid.js"></script>
+<link rel="stylesheet" href="droid.css" type="text/css" charset="utf-8" />
+     <link href="d3.parcoords.css" rel="stylesheet">
+     <link href="airlineData.parallelcoordinates.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+
+
+     <button id="keep-data">Keep</button>
+      <button id="exclude-data">Exclude</button>
+      <button id="reset-data">Reset</button>
+      <br>
+
+
+
+    <div id="wrapper" class="parcoords" style="width:100%;height:340px">
+      <div id="desc">
+      <div id="title"><span class="large">Airline Parallel Coordinates</span></div>
+
+
+      <footer><br>
+              D3 Parallel Coordinates visualization of 2014 domestic non-stop segment data reported by both U.S. and foreign air carriers available at <a href="http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=311&DB_Short_Name=Air%20Carriers">The Bureau of Transportation Statistics</a>. 
+          
+          <br>Code adopted from <a href="http://www.columbia.edu/~cme2126/datavisuals/bigdata_parallelcoordinates.html">Chris Evan's Parallel Coordinates Example</a>.
+              <br><br>Drag around axis to begin brush<br>
+              Click axis to clear brush<br>Click a label to color data by z-scores
+
+      </footer>
+
+
+      </div>
+    </div>
+    <div id="grid"></div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="airlineData.parallelcoordinates.js"></script>
+
+
+    </body>
+    </html>
