@@ -11,6 +11,8 @@
 }
 text {
   fill: white;
+  cursor: pointer;
+    
 }
 
 .tick{
