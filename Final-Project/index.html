@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+    <link rel="stylesheet" href="airports.css">
+    <link rel="stylesheet" href="lib/d3.slider.css">
+
+<body>
+    <div id="head">
+    <h1>Growth and Decay of American Airports
+        
+        </h1><h2>2004-2014</h2></div>
+    <div id="container">
+        <p id="intro">The Growth and Decay of American Airports is a visualization comprised of data taken from the BTS T-100 Market Database of Airline Carrier Data.  It displays the number of departures per year, and whether that number had increased from the previous year.</p>
+    <div id="date">
+      <p>12 months ending on:</p>
+      <p id="month"></p>
+    </div>
+    <div id="play"></div>
+    <div id="slider-container">
+        <p>
+  <label for="nAngle" 
+     style="display: inline-block; width: 700px; text-align: right">
+     Year = <span id="nAngle-value"></span>
+  </label>
+  <input type="range" min="2004" max="2014" id="nAngle">
+</p>
+      <div id="slider-div"></div>
+      <div id="slider-probe">
+        <p></p>
+        <div></div>
+      </div>
+    </div>
+    <div id="map-container"></div>
+        
+<script src="lib/d3.v3.min.js"></script>
+<script src="lib/topojson.v1.min.js"></script>
+<script src="lib/d3.slider.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
